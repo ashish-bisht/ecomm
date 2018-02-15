@@ -1,7 +1,19 @@
 from django import forms
 
 class NameForm(forms.Form):
-    first_name = forms.CharField(label='Your name', max_length=100)
-    second_name = forms.CharField(label='Second name',max_length=100)
-    email = forms.CharField(label='email',max_length=100)
-    content = forms.CharField()
+    first_name = forms.CharField(widget=forms.TextInput(attrs={
+        'class':'form-control',
+        'placeholder':'First Name'
+    }))
+    second_name = forms.CharField(widget=forms.TextInput(attrs={
+        'class':'form-control',
+        'placeholder':'second name'
+    }))
+    email = forms.CharField(widget=forms.EmailInput(attrs={
+        'class':'form-control',
+        'placeholder':'Email'
+    }))
+    content = forms.CharField(widget=forms.TextInput(attrs={
+        'class':'form-control',
+        'placeholder':'context'
+    }))

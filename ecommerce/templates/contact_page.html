@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Ecommerce</title>
 </head>
 <body>
     {{title}}
     <h1>Contact us on ----------</h1>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="col-sm-6 col-12">
 
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{form}}
-        <button type="submit">Submit</button>
-    </form>
+
+                    <form action="" method="POST">
+
+                            {% csrf_token %}
+                            {{form}}
+                            <button type="submit">Submit</button>
+                        </form>
+                     </div>
+                    </div>
+                </div>
+            </div>
+    
 </body>
-</html>
+</html> 
