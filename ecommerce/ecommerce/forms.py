@@ -17,3 +17,15 @@ class NameForm(forms.Form):
         'class':'form-control',
         'placeholder':'context'
     }))
+
+
+class LoginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField(widget=forms.PasswordInput())
+
+
+class RegisterForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField()
+    password2 = forms.CharField()   
+
