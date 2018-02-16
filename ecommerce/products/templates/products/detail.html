@@ -7,13 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    {% for obj in  object_list %}
-      {{obj.title}}
-      <br>
-      {{obj.description}}
-      <br>
-      {{obj.price}}
-      <hr>
-    {% endfor %}
+    {{object.title}}
+    <br>
+    {{ object.description}}
+    <br>
+    {{object.price}}
 </body>
 </html>
